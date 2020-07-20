@@ -44,7 +44,9 @@
 
 /* Portfolio */
 
-
+.portfolio {
+  border-bottom: 1px lightgrey solid;
+}
 
 .portfolio h2 {
   padding: 20px 0 20px 0;
@@ -61,6 +63,29 @@
 
 }
 
+.portfolio-item h5 {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
 .portfolio-item img {
   border: 1px lightgrey solid;
+}
+
+.port-info {
+  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+}
+
+.port-date {
+  display: inline;
+  float: right;
+}
+
+.port-lang {
+  display: inline;
+  float: left;
 }
