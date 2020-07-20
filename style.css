@@ -1,0 +1,32 @@
+
+#navbar {
+  z-index: 1;
+  border-bottom: 1px solid grey;
+}
+
+
+/* hero */
+
+#hero {
+  background-image: url(./images/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#hero-title {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  border: solid 1px white;
+}
+
+@media (min-width: 1200px) {
+  #hero {
+    height: 100vh;
+    min-height: 650px;
+  }
+
+  #hero-info {
+    padding-top: 250px;
+    text-align: center;
+  }
+}
