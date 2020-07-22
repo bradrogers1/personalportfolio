@@ -13,7 +13,41 @@
 
 #navbar {
   z-index: 1;
-  border-bottom: 1px solid grey;
+}
+
+.nav-menu-options {
+  float: right;
+  background-color: red;
+}
+.nav-item {
+  display: inline-block;
+
+}
+
+@media (max-width: 768px) {
+  #mdNavbar {
+    display: none;
+  }
+}
+
+/* small nav */
+
+.small-nav {
+  background-image: url(./images/hamburgermenu.png);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid lightgrey;
+  z-index: 10;
+}
+
+.small-nav a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .small-nav {
+    display: none;
+  }
 }
 
 
@@ -31,9 +65,18 @@
   border: solid 1px white;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
   #hero {
-    height: 100vh;
+    min-height: 400px;
+  }
+  #hero-info {
+    padding-top: 150px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero {
     min-height: 650px;
   }
 
@@ -76,21 +119,38 @@
   width: 100%;
   font-size: 12px;
   color: #595959;
+  padding-top: 5px;
 }
 
 .port-date {
   display: inline;
   float: right;
+  padding-right: 10px;
 }
 
 .port-lang {
   display: inline;
   float: left;
+  padding-left: 10px;
 }
 
 .about {
   padding-left: 200px;
   padding-right: 200px;
+}
+
+@media (max-width: 767px) {
+ .about {
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+ .about {
+   padding-left: 100px;
+   padding-right: 100px;
+ }
 }
 
 .about h2 {
@@ -110,6 +170,10 @@
   border-bottom: 1px solid #595959;
 }
 
+.social-links {
+  padding-bottom: 20px;
+}
+
 .social-links-title {
   text-align: center;
   color: #595959;
@@ -117,4 +181,14 @@
 
 .social-links h2 {
   padding: 20px 0 20px 0;
+}
+
+.social-media-icons {
+  text-align: center;
+}
+
+.social-media-icons img {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px 0 20px;
 }

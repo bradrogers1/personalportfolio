@@ -13,14 +13,35 @@
  </head>
  <body>
    <!---     Nav     --->
-   <nav class ="navbar navbar-expand-xl position-absolute w-100" id="navbar">
-     <div class="d-xl-flex flex-grow-1" id="xlNavbar">
-       <a class="navbar-brand py-0 pr-0 pl-2 text-white" href="#">Brad Rogers</a>
-       <div class="navbar-nav ml-auto">
+   <nav class ="navbar navbar-expand-md position-absolute w-100 position-static" id="navbar">
+     <a class="navbar-brand py-0 pr-0 pl-2 text-white" href="#">Brad Rogers</a>
+     <div class="d-md-flex flex-grow-1" id="mdNavbar">
+       <div class="navbar-nav ml-auto float-right d-inline">
          <a class="nav-item nav-link py-0 px-2 text-white" href="#portfolio"><div class="px-2">Portfolio</div></a>
          <a class="nav-item nav-link py-0 px-2 text-white" href="#about"><div class="px-2">About</div></a>
+        <a class="nav-item nav-link py-0 px-2 text-white" href="#social"><div class="px-2">Social</div></a>
        </div>
      </div>
+     <!-- small nav -->
+     <div class="small-nav">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+
+        <div class="collapse navbar-collapse position-absolute" id="navbarToggle">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="#portfolio">Portfolio</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#about">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#social">Social</a>
+           </li>
+         </ul>
+       </div>
+      </div>
     </nav>
     <!-- Nav -->
 
@@ -45,9 +66,9 @@
         </div>
         <div class="row news-row">
           <div class="col-12 col-md-6 portfolio-item">
-            <a href="#"><h5>Airbnb Newsroom</h5></a>
+            <a href="https://admiring-goodall-d48bbe.netlify.app/" target="_blank"><h5>Airbnb Newsroom</h5></a>
             <div class="hero-image">
-              <a href="#"><img src="./images/airbnb.png" class="img-fluid rounded"></a>
+              <a href="https://admiring-goodall-d48bbe.netlify.app/" target="_blank"><img src="./images/airbnb.png" class="img-fluid rounded"></a>
             </div>
             <div class="port-info">
               <p class="port-lang">HTML
@@ -56,9 +77,9 @@
             </div>
           </div>
           <div class="col-12 col-md-6 portfolio-item">
-            <a href="#"><h5>Airbnb</h5></a>
+            <a href="https://agitated-northcutt-2d6e12.netlify.app/" target="_blank"><h5>Airbnb</h5></a>
             <div class="hero-image">
-              <a href="#"><img src="./images/airbnb2.png" class="img-fluid rounded"><a/>
+              <a href="https://agitated-northcutt-2d6e12.netlify.app/" target="_blank"><img src="./images/airbnb2.png" class="img-fluid rounded"><a/>
             </div>
             <div class="port-info">
               <p class="port-lang">HTML
@@ -67,9 +88,9 @@
             </div>
           </div>
           <div class="col-12 col-md-6 portfolio-item">
-            <a href="#"><h5>Newsweek</h5></a>
+            <a href="https://loving-turing-1b6a2b.netlify.app/" target="_blank"><h5>Apple</h5></a>
             <div class="hero-image">
-              <a href="#"><img src="./images/apple.png" class="img-fluid rounded"><a/>
+              <a href="https://loving-turing-1b6a2b.netlify.app/" target="_blank"><img src="./images/apple.png" class="img-fluid rounded"><a/>
             </div>
             <div class="port-info">
               <p class="port-lang">HTML
@@ -78,9 +99,9 @@
             </div>
           </div>
           <div class="col-12 col-md-6 portfolio-item">
-            <a href="#"><h5>Bobby's Paradise</h5></a>
+            <a href="https://kind-pare-fce87a.netlify.app" target="_blank"><h5>Newsroom</h5></a>
             <div class="hero-image">
-              <a href="#"><img src="./images/duckparadise.png" class="img-fluid rounded"><a/>
+              <a href="https://kind-pare-fce87a.netlify.app" target="_blank"><img src="./images/newsroom.png" class="img-fluid rounded"><a/>
             </div>
             <div class="port-info">
               <p class="port-lang">HTML
@@ -99,24 +120,22 @@
           <h2>About Me</h2>
         </div>
         <div class="about-info">
-          <p>Hockey lover, gamer, skier, dog-lover, soon to be front-end developer! I've always been interested in technology but grew up working with my hands. There was always something telling me I should be going down a different path and here I am, learning front-end development and mobile app development. It's been quite the learning curve but I enjoy the challenge.
-
-          Excited for what the future brings!
+          <p>Hockey lover, gamer, skier, dog-lover, soon to be front-end developer! I've always been interested in technology but grew up working with my hands. There was always something telling me I should be going down a different path and here I am, learning front-end development and mobile app development. It's been quite the learning curve but I enjoy the challe nge.Excited for what the future brings!
         </div>
       </div>
 
       <!-- social -->
-      <div class="social-links">
+      <div class="social-links" id="social">
         <div class="social-links-title">
           <h2>Find me around the web!</h2>
         </div>
-        <div class="social-media-icons">
-          <a href="#"><img src="./images/facebook.png" class="img-fluid rounded"><a/>
-          <a href="#"><img src="./images/twitter.png" class="img-fluid rounded"><a/>
-          <a href="#"><img src="./images/instagram.png" class="img-fluid rounded"><a/>
-          <a href="#"><img src="./images/linkedin.png" class="img-fluid rounded"><a/>
-      </div>
-
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook.png" class="img-fluid rounded"><a/>
+            <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" class="img-fluid rounded"><a/>
+            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" class="img-fluid rounded"><a/>
+            <a href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.png" class="img-fluid rounded"><a/>
+          </div>
+        </div>
     </div>
 
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
